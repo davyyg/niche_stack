@@ -1,0 +1,78 @@
+
+/* css style for Innovation */
+
+
+#container {width: 1024px; margin: 0 auto; background-color:white;}
+
+/* navigation */
+
+#logo {margin: 10px 0 0 20px;}
+#navigation {margin: 20px 0 0 300px;}
+#navigation a:link {}
+#navigation a:hover {background: url(images/nav.jpg);}
+#navigation a:active {}
+
+#navlist{position:relative;}
+#navlist li{margin:-55px 0 0 350px;padding:0;list-style:none;position:absolute;top:0;}
+#navlist li, #navlist a{height:40px; width: 150px; display:block;}
+#navcontainer {position: relative; width: auto; height: auto;}
+
+#about{left:0;width:40px;}
+#about{background:url('images/navbar.jpg') -20px 0;}
+#about a:hover{background: url('images/navbar.jpg') -20px -40px;}
+
+#portfolio{left:140px;width:46px;}
+#portfolio{background:url('images/navbar.jpg') -150px 0;}
+#portfolio a:hover{background: url('images/navbar.jpg') -150px -40px;}
+
+#services{left:290px;width:30px;}
+#services{background:url('images/navbar.jpg') -290px 0;}
+#services a:hover{background: url('images/navbar.jpg') -290px -40px;}
+
+#blog{left:420px;width:46px;}
+#blog{background:url('images/navbar.jpg') -430px 0;}
+#blog a:hover{background: url('images/navbar.jpg') -430px -40px;}
+
+#contact{left:500px;width:46px;}
+#contact{background:url('images/navbar.jpg') -520px 0;}
+#contact a:hover{background: url('images/navbar.jpg') -520px -40px;}
+
+#ymstatus{margin: 0 0 0 50px;}
+
+body {background-color:silver;}
+
+#banner {}
+#banner-nav {margin: 0 0 0 650px; z-index: 0;}
+#bannernavtext {position:absolute; margin: 30px 0 0 750px; font: Arial, Helvetica, sans-serif; color:white; z-index:10; }
+
+#article {width: 800px; margin: 320px 0 0 80px;}
+#contactarticle {width: 700px; margin: 20px 0 0 50px;}
+#contactform {margin: 0 0 0 50px; text-align: left;}
+
+#servicearticle {margin: 0 0 0 80px;}
+#servicetitle {font-size: 30px; color: orange;}
+
+#footer {background: url(images/footer.jpg) repeat-x; height: 115px; margin: 100px 0 0 0;}
+
+#footerlogo {margin: 0 0 0 10px;}
+#footertext {margin: -50px 0 0 250px; }
+#footerkontak {margin: -50px 0 0 20px;}
+#footerlink {margin: -60px 0 0 300px;}
+#footerlinknet {margin: -35px 0 0 600px;}
+
+#articlesbox {margin: 0 0 0 650px; padding: 10px; width: 250px; height: 300px; border-style: solid; border-width: 0; background-color: lightblue; border-radius: 0;}
+#articletitle {margin: 0 0 0 0; font-weight:bold; padding: 5px; width: 230px; height: 20px; background-color: white; border-style: solid; border-width: 0; border-radius: 10px; }
+#articles {margin: -300px 0 0 60px; width: 520px;}
+
+/*  portfolio */
+
+.fb-like {margin: 20px 0 0 200px;}
+
+#thumbnailbar {margin: 0 0 0 50px;}
+#thumbnail {margin: -400px 0 0 60px;}
+#largepic img{margin: -50px 0 0 200px; border: 3px solid gray;}
+#portfolioarticle {margin: -280px 0 0 600px;}
+#portfoliotitle {font-size: 35px; color:#666666; }
+#portfoliolink a:link{font-color:blue; text-decoration:none;}
+#portfoliosubtitle{color:gray; font-size: 14px;}
+
