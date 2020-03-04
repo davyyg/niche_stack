@@ -45,9 +45,8 @@
               </thead>
               <tbody>
               @foreach($list as $item)  
-              <tr>
                 <td>{{ $item->id }}</td>
-                <td>{{ $item->group_id }}</td>
+                <td>{{ $item->group->group_name }}</td>
                 <td>{{ $item->first_name }}</td>
                 <td>{{ $item->last_name }}</td>
                 <td>{{ $item->address }}</td>
@@ -90,7 +89,9 @@
 
 <script>
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('#example').DataTable({
+      "scrollX": true
+    });
 } );
 </script>
 

@@ -20,7 +20,7 @@ class ContactsController extends Controller
     public function index()
     {
         //
-        $data = Contacts::all();  
+        $data = Contacts::with('group')->get();  
 
         return view('admin.home.contacts')->with('list', $data);
     }

@@ -27,14 +27,19 @@
       <br>
       <table width="800">
           
-          <tr>
-              <td>Group Name</td>
-              <td><input required type="text" size="50" value="" name="group_name"></td>
-          </tr>          
-          <tr>
-              <td></td>
-              <td><br><button type="submit" class="btn btn-primary">Submit</button></td>
-          </tr>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="group_name">Group Name</label>
+              <div class="col-sm-10">
+              <input required type="text" class="form-control" size="50" value="" name="group_name">
+              </div>
+          </div>           
+          <div class="form-group">
+              <label class="control-label col-sm-2"></label>
+              <div class="col-sm-10">
+              <br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+          </div>
 
       </table>  
     </form>

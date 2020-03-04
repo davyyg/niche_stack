@@ -22,72 +22,93 @@
     <!-- Main content -->
     <section class="content">
     <br>
-    <form method="post" action="{{ route('contacts.store') }}" enctype="multipart/form-data">
+    <form class="form-horizontal" method="post" action="{{ route('contacts.store') }}" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
       <br>
       <table width="800">
-          <tr>
-              <td>Group Name</td>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="group_name">Group Name</label>
               
-              <td>
-                <select class="custom-select d-block w-100" name="group_id" required>
+              <div class="col-sm-10">
+                <select class="custom-select d-block w-100" class="form-control" name="group_id" required>
                   <option value="0">Select</option>
                 @foreach($list as $item)  
                   <option value="{{ $item->id }}">{{ $item->group_name }}</option>
                 @endforeach  
                 </select>
-              </td>
-          </tr>    
+              </div>
+          </div>    
           <tr>
               <td></td>
-              <td><div style="color: #a09e9e;"><b>200px x 200px</b></div></td>
-          </tr>
-          <tr>
-              <td>Upload Avatar</td>
-              <td>
-                  <input type="file" name="avatar" id="avatar">
-              </td>
-          </tr>
-          <tr>
-              <td>First name </td>
-              <td><input required type="text" size="50" value="" name="first_name"></td>
-          </tr>
-          <tr>
-              <td>Last name </td>
-              <td><input required type="text" size="50" value="" name="last_name"></td>
-          </tr>  
-          <tr>
-              <td>Address </td>
-              <td><textarea required name="address" rows="4" cols="40"></textarea></td>
-          </tr>
-          <tr>
-              <td>City </td>
-              <td><input required type="text" size="50" value="" name="city"></td>
-          </tr>
-          <tr>
-              <td>ZIP </td>
-              <td><input required type="text" size="50" value="" name="zip"></td>
-          </tr>
-          <tr>
-              <td>Country </td>
-              <td><input required type="text" size="50" value="" name="country"></td>
-          </tr>
-          <tr>
-              <td>Email </td>
-              <td><input required type="text" size="50" value="" name="email"></td>
-          </tr>
-          <tr>
-              <td>Phone </td>
-              <td><input required type="text" size="50" value="" name="phone"></td>
-          </tr>
-          <tr>
-              <td>Note </td>
-              <td><input required type="text" size="50" value="" name="note"></td>
-          </tr>          
-          <tr>
               <td></td>
-              <td><br><button type="submit" class="btn btn-primary">Submit</button></td>
           </tr>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="avatar">Upload Avatar</label>
+              <div class="col-sm-10">
+                  <div style="color: #a09e9e;"><b>200px x 200px</b></div>
+                  <input type="file" class="form-control" name="avatar" id="avatar">
+              </div>
+          </div>  
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="first_name">First name </label>
+              <div class="col-sm-10">
+                <input required type="text" class="form-control" size="50" value="" name="first_name">
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="last_name">Last name </label>
+              <div class="col-sm-10">
+                <input required type="text" class="form-control" size="50" value="" name="last_name">
+              </div>  
+          </div> 
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="address">Address </label>
+              <div class="col-sm-10">
+                <textarea required name="address" class="form-control" rows="4" cols="40"></textarea>
+              </div>  
+          </div> 
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="city">City </label>
+              <div class="col-sm-10">
+              <input required type="text" class="form-control" size="50" value="" name="city">
+              </div>
+          </div> 
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="zip">ZIP </label>
+              <div class="col-sm-10">
+              <input required type="text" class="form-control" size="50" value="" name="zip">
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="country">Country </label>
+              <div class="col-sm-10">
+              <input required type="text" class="form-control" size="50" value="" name="country">
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email </label>
+              <div class="col-sm-10">
+              <input required type="text" class="form-control" size="50" value="" name="email">
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="phone">Phone </label>
+              <div class="col-sm-10">
+              <input required type="text" class="form-control" size="50" value="" name="phone">
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="phone">Note </label>
+              <div class="col-sm-10">
+              <input required type="text" class="form-control" size="50" value="" name="note">
+              </div>
+          </div>          
+          <div class="form-group">
+              <label class="control-label col-sm-2"></label>
+              <div class="col-sm-10">
+              <br><button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+          </div> 
 
       </table>  
     </form>

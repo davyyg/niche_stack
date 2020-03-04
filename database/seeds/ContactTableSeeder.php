@@ -11,6 +11,6 @@ class ContactTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Model\Contacts::class, 3)->create(); // create 3 products       
+        factory(App\Model\Contacts::class, 10000)->create(); // create 3 products       
     }
 }
